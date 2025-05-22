@@ -1,73 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sākums</title>
+    <style>
+        @font-face {
+            font-family: "horizon";
+            src: url(horizon.otf);
+        }
+        @font-face {
+            font-family: "garet";
+            src: url(Garet-Book.otf);
+        }
+
+        body {
+            margin: 0;
+            font-family: "garet", sans-serif;
+            background-color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-bottom: 5px solid #c0c0c0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .menu-icon {
+            width: 60px;
+            height: auto;
+        }
+
+        h1 {
+            font-family: "horizon", sans-serif;
+            font-size: 28px;
+            margin-top: 10px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .image-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-text img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .text-block {
+            max-width: 700px;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        @media (min-width: 768px) {
+            .image-text {
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 20px;
+            }
+
+            .image-text img {
+                width: 45%;
+            }
+        }
+    </style>
 </head>
-<style>
-    @font-face {
-        font-family: "horizon";
-        src: url(horizon.otf);
-    }
-    @font-face {
-        font-family: "garet";
-        src: url(Garet-Book.otf);
-    }
-    body{
-        background-color: white;
-    }
-    h1{
-        font-family: "horizon";
-        position: absolute; top: 110px; left: 65px;
-    }
-    h3{
-        font-family: "garet";
-        position: absolute;
-        left: 180px;
-        top: 175px;
-    }
-    h2{
-        font-family: "garet";
-        position: absolute;
-        top: 500px;
-        font-size: 19px;
-    }
-    h4{
-        font-family: "garet";
-        position: absolute;
-        top: 630px;
-        right: 200px;
-        left: 8px;
-        font-size: 19px;
-    }
-</style>
 <body>
-    <hr width="100%;" color="#c0c0c0" size="10" style="position: absolute; top: 75px; right: 0px">
-<a href="index.html">
-    <img src="threelines.jpg"; height="50px"; width="80px"; style="position: absolute; top: 20px; left: 300px;">
-    </a>
-    <img src="LUSVwhite.png"; height="55px"; width="110px"; style="position: absolute; top: 15px; left: 5px;">
-    <img src="LUSVwhiteBLOSTA-Photoroom.png"; height="60px"; width="120px"; style="position: absolute; top: 10px; left: 135px;">
+
+    <header>
+        <div class="logo-container">
+            <img src="LUSVwhite.png" alt="Logo" style="height: 50px;">
+            <img src="LUSVwhiteBLOSTA-Photoroom.png" alt="Blosta" style="height: 55px;">
+        </div>
+        <a href="index.html">
+            <img src="threelines.jpg" class="menu-icon" alt="Izvēlne">
+        </a>
+    </header>
+
     <h1>Par tērpu</h1>
-    <h3>Maskas ļāuj cilvēkiem paslēpt savu īsto identitāti,
-        spēlēt dažādas lomas un uzvesties brīvāk, neatkarīgi no
-        sociālā statusa vai morālajiem ierobežojumiem. Baroka
-        laikmets, no kura tika ņemta iedvesma apģērbam, bija
-        piepildīts ar</h3>
-    <h2>dramatismu, paradoksiem un ilūziju spēlēm.
-        Maskas simbolizēja pretrunu starp ārējo fasādi un iekšējo
-        patiesību, uzsverot baroka mākslas tieksmi pēc teatralitātes
-        un noslēpumainības.</h2>
-    <h4>Galvas rotā izliektie metāla stieņi un
-        kristālu fragmenti paceļas kā baroka arhitektūras smalkie dekori,
-        kas simbolizē gan radošo haosu, gan garīguma alkas. Tērpa
-        apakšdaļā saplūst lauzti, sudraba spīdoši elementi ar mežģīnēm,
-        veidojot dialogu starp aukstumu un maigumu. Tas mēģina saplūst
-        robežas starp realitāti un izdomu.</h4>
- 
-       
-    <img src="Em1.jpeg"; height="315px"; width="170px"; style="position: absolute; top: 200px; left: 5px;">
-    <img src="Em3.jpeg"; height="500px"; width="190px"; style="position: absolute; top: 680px; right: 5px;">
+
+    <div class="content">
+
+        <div class="image-text">
+            <img src="Em1.jpeg" alt="Tērps 1">
+            <p class="text-block">
+                Maskas ļauj cilvēkiem paslēpt savu īsto identitāti, spēlēt dažādas lomas un uzvesties brīvāk, neatkarīgi no sociālā statusa vai morālajiem ierobežojumiem. Baroka laikmets, no kura tika ņemta iedvesma apģērbam, bija piepildīts ar dramatismu, paradoksiem un ilūziju spēlēm. Maskas simbolizēja pretrunu starp ārējo fasādi un iekšējo patiesību, uzsverot baroka mākslas tieksmi pēc teatralitātes un noslēpumainības.
+            </p>
+        </div>
+
+        <div class="image-text">
+            <img src="Em3.jpeg" alt="Tērps 2">
+            <p class="text-block">
+                Galvas rotā izliektie metāla stieņi un kristālu fragmenti paceļas kā baroka arhitektūras smalkie dekori, kas simbolizē gan radošo haosu, gan garīguma alkas. Tērpa apakšdaļā saplūst lauzti, sudraba spīdoši elementi ar mežģīnēm, veidojot dialogu starp aukstumu un maigumu. Tas mēģina saplūst robežas starp realitāti un izdomu.
+            </p>
+        </div>
+
+    </div>
+
 </body>
 </html>
