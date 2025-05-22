@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Par mani</title>
+  <style>
+    @font-face {
+      font-family: "horizon";
+      src: url(horizon.otf);
+    }
+    @font-face {
+      font-family: "garet";
+      src: url(Garet-Book.otf);
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: "garet", sans-serif;
+      background-color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 5px solid #c0c0c0;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    h1 {
+      font-family: "horizon";
+      font-size: 28px;
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .image-row img {
+      width: 45%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 600px) {
+      .image-row img {
+        width: 80%;
+      }
+
+      h1 {
+        font-size: 24px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="LUSVwhite.png" alt="Logo 1">
+    <img src="LUSVwhiteBLOSTA-Photoroom.png" alt="Logo 2">
+    <a href="index.html">
+      <img src="threelines.jpg" alt="Izvēlne" style="height: 40px;">
+    </a>
+  </header>
+
+  <h1>Par mani</h1>
+
+  <p>"Es esmu Emīlija Lemberga, skolniece Siguldas pilsētas vidusskolā, kur mācos desmitajā klasē Radošajās industrijās. Šobrīd es ļoti aizraujos ar dažādiem mākslas veidiem, piemēram, gleznošanu, zīmēšanu, tekstilu,</p>
+
+  <p>veidošanu un digitālo dizainu, jo tas man patīk un mani iedvesmo. Es savos darbos cenšos izmantot dažādas tehnikas un materiālus. Pagaidām man īpaši patīk strādāt ar stiklu, ko varat redzēt manā modes darbā. Es uzklausu citu cilvēku ieteikumus un idejas, kā arī pati cenšos palīdzēt citiem pilnveidot viņu idejas, ja kāds to prasa. Tāpat es daudz gleznoju un cenšos apgūt</p>
+
+  <p>reālismu gleznošanā: pašlaik tas man diezgan labi padodas. Brīvajā laikā es mācos spēlēt ģitāru. Eju uz izstādēm un koncertiem, lai paplašinātu savu iztēli un radošumu, jo tur es gūstu vēl vairāk iedvesmas zīmēšanai un veidošanai."</p>
+
+  <p><strong>Jūs mani varat atrast instagramā: </strong>@emilija._le</p>
+
+  <div class="image-row">
+    <img src="Em2.jpeg" alt="Attēls 1">
+    <img src="Em4.jpeg" alt="Attēls 2">
+  </div>
+
+</body>
+</html>
